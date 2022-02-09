@@ -2,20 +2,25 @@
 
 @keyframes comesFromLeft {
   0% {
-    transform: translateX(-1000px);
+    transform: translateX(-200%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes comesFromRight {
   0% {
-    transform: translateX(1000px);
+    transform: translateX(200%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
+
 body {
   background-color: #222222;
   font-family: "Roboto", sans-serif;
