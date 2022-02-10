@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  color: white;
+}
+p {
+  color: #858585;
+}
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+}
+.phone {
+  display: flex;
+  position: relative;
+  height: 450px;
+}
+
+.computer {
+  display: flex;
+  position: relative;
+  height: 300px;
+  width: 850px;
+}
+.previewPhone {
+  width: 250px;
+}
+.shadow {
+  position: absolute;
+  width: 250px;
+  height: 450px;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    360deg,
+    #222222 20%,
+    rgba(34, 34, 34, 0.6) 80%,
+    rgba(34, 34, 34, 0) 120%
+  );
+  mix-blend-mode: normal;
+  transition-duration: 0.5s;
+}
+.shadowComputer {
+  top: -10px;
+  height: 310px;
+  width: 850px;
+  background: linear-gradient(
+    360deg,
+    #222222 40%,
+    rgba(34, 34, 34, 0.6) 80%,
+    rgba(34, 34, 34, 0) 120%
+  );
+}
+.shadow:hover {
+  top: 10px;
+  transition-duration: 0.5s;
+}
+.shadowComputer:hover {
+  top: 0px;
+  transition-duration: 0.5s;
+}
