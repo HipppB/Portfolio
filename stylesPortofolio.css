@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 h1,
@@ -13,6 +14,29 @@ p {
 .projectContainer {
   display: flex;
   flex-direction: row;
+  max-width: 850px;
+}
+
+.projectContainerComputer {
+  max-width: 850px;
+}
+.projectContainerComputer .projectTitle {
+  text-align: center;
+}
+.projectContainerComputer .textContainer {
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+.projectContainer .textContainer {
+  margin-top: 50px;
+  max-width: 400px;
+  margin-right: 40px;
+}
+.projectContainer .textContainer.right {
+  max-width: 400px;
+  margin-right: 0px;
+  margin-left: 40px;
 }
 .phone {
   display: flex;
@@ -62,4 +86,19 @@ p {
 .shadowComputer:hover {
   top: 0px;
   transition-duration: 0.5s;
+}
+
+.technologies {
+  display: flex;
+}
+
+.technology {
+  background-color: #333333;
+  color: white;
+  font-size: 12px;
+
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
