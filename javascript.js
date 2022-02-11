@@ -1,6 +1,5 @@
 const transitionLeft = document.querySelectorAll(".comesFromLeft");
 const transitionRight = document.querySelectorAll(".comesFromRight");
-
 const liens = document.querySelectorAll("a");
 
 for (i = 0; i < liens.length; i++) {

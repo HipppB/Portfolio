@@ -90,6 +90,7 @@ p {
 
 .technologies {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .technology {
@@ -101,4 +102,60 @@ p {
   border-radius: 5px;
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.technology:hover {
+  background-color: #858585;
+}
+
+.otherProjectsContainer {
+  display: flex;
+  max-width: 850px;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.otherProject {
+  width: 35vw;
+  max-width: 350px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.otherProject .projectTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.otherProject .projectDescription {
+  color: #858585;
+  font-size: 15px;
+}
+.projectDescription a {
+  color: #a1a1a1;
+}
+.otherProjectPreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+}
+.otherProjectPreview,
+.otherProjectPreview img {
+  background-color: #2a2a2a;
+  width: 35vw;
+  height: 25vw;
+  border-radius: 25px;
+  max-width: 350px;
+  max-height: 250px;
+}
+
+.otherProject .technologies {
+  flex-grow: 1;
+  justify-self: flex-end;
+  display: flex;
+  align-items: flex-end;
 }

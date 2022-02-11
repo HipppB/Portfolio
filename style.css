@@ -66,3 +66,11 @@ body {
   animation-duration: 0.5s !important;
   opacity: 0;
 }
+
+.otherProject {
+  max-width: 450px;
+}
+
+a {
+  text-decoration: none;
+}
