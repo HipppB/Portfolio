@@ -21,6 +21,7 @@
   font-weight: 600;
   line-height: 1.25em;
   font-style: normal;
+
   animation-duration: 1s;
 }
 
@@ -30,6 +31,7 @@
   line-height: 1.25em;
   font-style: normal;
   margin-bottom: 1em;
+
   animation-duration: 1.5s;
 }
 #profilImage {
@@ -37,6 +39,7 @@
   width: 20em;
   height: auto;
   object-fit: cover;
+
   animation-duration: 1s;
 }
 

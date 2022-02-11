@@ -2,10 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 h1,
 h2 {
+  z-index: 2;
   color: white;
 }
 p {
@@ -19,6 +21,7 @@ p {
 
 .projectContainerComputer {
   max-width: 850px;
+  width: 90vw;
 }
 .projectContainerComputer .projectTitle {
   text-align: center;
@@ -49,6 +52,7 @@ p {
   position: relative;
   height: 300px;
   width: 850px;
+  max-width: 90vw;
 }
 .previewPhone {
   width: 250px;
@@ -71,6 +75,7 @@ p {
 .shadowComputer {
   top: -10px;
   height: 310px;
+  max-width: 90vw;
   width: 850px;
   background: linear-gradient(
     360deg,
@@ -143,6 +148,11 @@ p {
   align-items: center;
   font-size: 5vw;
 }
+
+.previewComputer {
+  max-width: 850px;
+  width: 90vw;
+}
 .otherProjectPreview,
 .otherProjectPreview img {
   background-color: #2a2a2a;
@@ -158,4 +168,114 @@ p {
   justify-self: flex-end;
   display: flex;
   align-items: flex-end;
+}
+
+.slideInRight {
+  animation: slideInRight 1s;
+  animation-iteration-count: 1;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s;
+  animation-iteration-count: 1;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    animation: none !important;
+  }
+  .projectContainer {
+    margin-top: 0;
+    margin-bottom: -150px;
+  }
+  .otherProjectsContainer {
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .otherProjectPreview,
+  .otherProjectPreview img {
+    font-size: 40px;
+    width: 50vw;
+    min-width: 250px;
+    height: auto;
+    min-height: 35vw;
+    min-height: 200px;
+  }
+  .otherProject {
+    width: 50vw;
+    min-width: 250px;
+  }
+  .shadow {
+    width: 100%;
+  }
+  .shadow {
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      360deg,
+      #222222 40%,
+      rgba(34, 34, 34, 0.6) 80%,
+      rgba(34, 34, 34, 0) 120%
+    );
+    mix-blend-mode: normal;
+    transition-duration: 0.5s;
+  }
+  .shadowComputer {
+    width: 100%;
+    background: linear-gradient(360deg, #222222 80%, rgba(34, 34, 34, 0) 120%);
+  }
+
+  .phone {
+    justify-content: center;
+    position: relative;
+  }
+  .phoneAtRight {
+    display: flex;
+    flex-direction: column;
+  }
+  .phoneAtLeft {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: none;
+  }
+
+  .phoneResponsiveContainer {
+    position: absolute;
+    z-index: 1;
+    width: 80vw;
+    right: 50vw;
+    transform: translateX(50%) translateY(100px);
+  }
+
+  .computer {
+    height: auto;
+  }
 }

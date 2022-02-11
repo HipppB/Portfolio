@@ -32,9 +32,12 @@
 
 .buttonsContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   animation-duration: 1s;
+  align-items: center;
 }
+
 a {
   text-decoration: none;
 }
@@ -48,5 +51,12 @@ a {
   font-weight: 500;
   font-size: 24px;
   padding: 10px;
-  margin-right: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.Icon {
+  width: 30px;
+  position: absolute;
+  left: 20px;
 }

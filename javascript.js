@@ -23,7 +23,26 @@ for (i = 0; i < liens.length; i++) {
       //On attend un peu que l'animation et se joue et on dirige vers le lien
       setTimeout(function () {
         window.location.href = lienclic;
+        setTimeout(function () {
+          cleanStuff();
+        }, 500);
       }, 500);
     });
   }
 }
+
+function cleanStuff() {
+  let transitionLeftBack = document.querySelectorAll(".leavesToLeft");
+  let transitionRightBack = document.querySelectorAll(".leavesToRight");
+  for (i = 0; i < transitionLeftBack.length; i++) {
+    transitionLeftBack[i].classList.remove("leavesToLeft");
+  }
+  for (i = 0; i < transitionRightBack.length; i++) {
+    transitionRightBack[i].classList.remove("leavesToRight");
+  }
+  console.log("cleaned !");
+}
+
+window.onbeforeunload = function HandleBackFunctionality() {
+  cleanStuff();
+};
