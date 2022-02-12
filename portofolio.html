@@ -1,160 +1,173 @@
 <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hippolyte Bach - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesPortofolio.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="javascript.js" async></script>
+    <meta
+      name="description"
+      content="Porfolio de Hippolyte Bach. Liste non exaustive de mes experiences de développeur. Actuellement élève ingénieur à l'ISEP et en recherche d'Alternance"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Hippolyte Bach</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="stylesPortofolio.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script type="text/javascript" src="javascript.js" async></script>
-</head>
-
-<body>
-  <h1>Mes travaux récents</h1>
-  <div class="projectContainer phoneAtRight">
-    <div class="textContainer slideInRight">
-      <h2 class="projectTitle">Foodyex</h2>
-      <div class="phoneResponsiveContainer">
+  <body>
+    <h1>Mes travaux récents</h1>
+    <div class="projectContainer phoneAtRight">
+      <div class="textContainer slideInRight">
+        <h2 class="projectTitle">Foodyex</h2>
+        <div class="phoneResponsiveContainer">
+          <div class="projectDescription">
+            <p>
+              Développement d’un réseau social de partage de plat entre élèves
+              de l'ISEP.
+            </p>
+            <p>
+              Projet destiné à l’apprentissage des langages utilisés dans le
+              cadre de la Junior Isep Academie en parteneriat avec BNP, Alten et
+              Saint Gobain.
+            </p>
+            <div class="technologies">
+              <div class="technology">React Native</div>
+              <div class="technology">PHP Symfony</div>
+              <div class="technology">API Rest</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="phone">
+        <img
+          src="./images/foodyex.svg"
+          class="previewPhone"
+          loading="lazy"
+          alt="ScreenShot of Foodyex App"
+        />
+        <div class="shadow"></div>
+      </div>
+    </div>
+    <div class="projectContainer phoneAtLeft">
+      <div class="phone">
+        <img
+          src="./images/OranoPreview.svg"
+          class="previewPhone"
+          loading="lazy"
+          alt="ScreenShot of Orano App"
+        />
+        <div class="shadow"></div>
+      </div>
+      <div class="textContainer right slideInLeft">
+        <h2 class="projectTitle">Orano Scan</h2>
+        <div class="phoneResponsiveContainer">
+          <div class="projectDescription">
+            <p>
+              Développement d’une application Android de Scan de documents et de
+              reconnaissance de texte pour l’entreprise Orano.
+            </p>
+            <p>
+              Principaux défis ? Interdiction d’utiliser des API tierces et
+              fonctionnenement strictement en local pour des raisons de
+              confidentialité.
+            </p>
+            <div class="technologies">
+              <div class="technology">React Native</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projectContainerComputer">
+      <h2 class="projectTitle">Pexe Budget App</h2>
+      <div class="computer">
+        <img
+          src="./images/PexePreview.svg"
+          class="previewComputer"
+          loading="lazy"
+          alt="ScreenShot of Pexe Interface"
+        />
+        <div class="shadowComputer shadow"></div>
+      </div>
+      <div class="textContainer">
         <div class="projectDescription">
           <p>
-            Développement d’un réseau social de partage de plat entre élèves de
-            l'ISEP.
+            Réalisation d’une interface de gestion de budget pour le PEXE.
+            <br />
+            L’utilisateur, une fois identifié peut créer, consulter, modifier ou
+            supprimer une fiche budgétaire. Possibilité d'exporter le budget
+            d’une année ainsi que d'autre fonctions.
           </p>
           <p>
-            Projet destiné à l’apprentissage des langages utilisés dans le cadre
-            de la Junior Isep Academie en parteneriat avec BNP, Alten et Saint
-            Gobain.
+            Principaux défis ? La gestion d’un formulaire à rallonge de création
+            de fiches qui s’autocomplète et se modifie seul sous certaines
+            conditions.
           </p>
           <div class="technologies">
-            <div class="technology">React Native</div>
-            <div class="technology">PHP Symfony</div>
+            <div class="technology">React JS</div>
             <div class="technology">API Rest</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="phone">
-      <img src="./images/foodyex.svg" class="previewPhone" loading="lazy" />
-      <div class="shadow"></div>
-    </div>
-  </div>
-  <div class="projectContainer phoneAtLeft">
-    <div class="phone">
-      <img
-        src="./images/OranoPreview.svg"
-        class="previewPhone"
-        loading="lazy"
-      />
-      <div class="shadow"></div>
-    </div>
-    <div class="textContainer right slideInLeft">
-      <h2 class="projectTitle">Orano Scan</h2>
-      <div class="phoneResponsiveContainer">
-        <div class="projectDescription">
-          <p>
-            Développement d’une application Android de Scan de documents et de
-            reconnaissance de texte pour l’entreprise Orano.
-          </p>
-          <p>
-            Principaux défis ? Interdiction d’utiliser des API tierces et
-            fonctionnenement strictement en local pour des raisons de
-            confidentialité.
-          </p>
-          <div class="technologies">
-            <div class="technology">React Native</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="projectContainerComputer">
-    <h2 class="projectTitle">Pexe Budget App</h2>
-    <div class="computer">
-      <img
-        src="./images/PexePreview.svg"
-        class="previewComputer"
-        loading="lazy"
-      />
-      <div class="shadowComputer shadow"></div>
-    </div>
-    <div class="textContainer">
-      <div class="projectDescription">
-        <p>
-          Réalisation d’une interface de gestion de budget pour le PEXE. <br />
-          L’utilisateur, une fois identifié peut créer, consulter, modifier ou
-          supprimer une fiche budgétaire. Possibilité d'exporter le budget d’une
-          année ainsi que d'autre fonctions.
-        </p>
-        <p>
-          Principaux défis ? La gestion d’un formulaire à rallonge de création
-          de fiches qui s’autocomplète et se modifie seul sous certaines
-          conditions.
-        </p>
-        <div class="technologies">
-          <div class="technology">React JS</div>
-          <div class="technology">API Rest</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <h1>Quelques autres travaux</h1>
-  <section class="otherProjectsContainer">
-    <div class="otherProject">
-      <div class="otherProjectPreview">
-        <img src="./images/ImageGOB.png" />
+    <h1>Quelques autres travaux</h1>
+    <section class="otherProjectsContainer">
+      <div class="otherProject">
+        <div class="otherProjectPreview">
+          <img src="./images/ImageGOB.png" alt="Project name + Logo" />
+        </div>
+        <div class="projectTitle">Guardian of the Bookshelves</div>
+        <div class="projectDescription">
+          Programme de création et de lecture de livres dont vous êtes le
+          héros.<br />
+          Développé dans le cadre d’un projet informatique à l’ISEP
+        </div>
+        <div class="technologies">
+          <div class="technology">Python</div>
+          <div class="technology">CLI</div>
+        </div>
       </div>
-      <div class="projectTitle">Guardian of the Bookshelves</div>
-      <div class="projectDescription">
-        Programme de création et de lecture de livres dont vous êtes le
-        héros.<br />
-        Développé dans le cadre d’un projet informatique à l’ISEP
+      <div class="otherProject">
+        <div class="otherProjectPreview">⚔️🏰</div>
+        <div class="projectTitle">Tower Defense</div>
+        <div class="projectDescription">
+          Bases d’un jeu de Tower Defense.<br />
+          Projet de programmation orienté objet dans le cadre de l’ISEP
+        </div>
+        <div class="technologies">
+          <div class="technology">Python</div>
+          <div class="technology">Pygame</div>
+          <div class="technology">Umbrello</div>
+        </div>
       </div>
-      <div class="technologies">
-        <div class="technology">Python</div>
-        <div class="technology">CLI</div>
+      <div class="otherProject">
+        <div class="otherProjectPreview"></div>
+        <div class="projectTitle">Short url</div>
+        <div class="projectDescription">
+          Création d’une API et d’un site pour réduire les URLs et les associer
+          à mon nom de domaine. Très utile pour partager des liens. <br />
+          cf.&nbsp;linkedin<a href="https://bach.fr/link" class="noEffect"
+            >&nbsp;l.bach.fr/link</a
+          >&nbsp;😉
+        </div>
+        <div class="technologies">
+          <div class="technology">Javascript</div>
+          <div class="technology">PHP Symfony</div>
+          <div class="technology">Anciennement : Yourls</div>
+        </div>
       </div>
-    </div>
-    <div class="otherProject">
-      <div class="otherProjectPreview">⚔️🏰</div>
-      <div class="projectTitle">Tower Defense</div>
-      <div class="projectDescription">
-        Bases d’un jeu de Tower Defense.<br />
-        Projet de programmation orienté objet dans le cadre de l’ISEP
+      <div class="otherProject">
+        <div class="otherProjectPreview"></div>
+        <div class="projectTitle">Experiences diverses</div>
+        <div class="projectDescription">
+          Todo, Cloud perso, VPN, boutique en ligne, des serveurs de jeux, ou
+          même des applications mobile...
+        </div>
+        <div class="technologies">
+          <div class="technology">Divers</div>
+        </div>
       </div>
-      <div class="technologies">
-        <div class="technology">Python</div>
-        <div class="technology">Pygame</div>
-        <div class="technology">Umbrello</div>
-      </div>
-    </div>
-    <div class="otherProject">
-      <div class="otherProjectPreview"></div>
-      <div class="projectTitle">Short url</div>
-      <div class="projectDescription">
-        Création d’une API et d’un site pour réduire les URLs et les associer à
-        mon nom de domaine. Très utile pour partager des liens. <br />
-        cf.&nbsp;linkedin<a href="https://bach.fr/link" class="noEffect"
-          >&nbsp;l.bach.fr/link</a
-        >&nbsp;😉
-      </div>
-      <div class="technologies">
-        <div class="technology">Javascript</div>
-        <div class="technology">PHP Symfony</div>
-        <div class="technology">Anciennement : Yourls</div>
-      </div>
-    </div>
-    <div class="otherProject">
-      <div class="otherProjectPreview"></div>
-      <div class="projectTitle">Experiences diverses</div>
-      <div class="projectDescription">
-        Todo, Cloud perso, VPN, boutique en ligne, des serveurs de jeux, ou même
-        des applications mobile...
-      </div>
-      <div class="technologies">
-        <div class="technology">Divers</div>
-      </div>
-    </div>
-  </section>
-  <a href="./contact.html" class="buttonPrimary">Contactez moi</a>
-</body>
+    </section>
+    <a href="./contact.html" class="buttonPrimary">Contactez moi</a>
+  </body>
+</html>

@@ -1,36 +1,41 @@
-<!DOCTYPE html lang="fr">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>Hippolyte Bach</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="stylesIndex.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script type="text/javascript" src="javascript.js" async></script>
-</head>
-<body onbeforeunload="HandleBackFunctionality();">
-  <div></div>
-  <div class="container">
-    <div class="textContainer">
-      <h1 class="title comesFromLeft">Je suis Hippolyte</h1>
-      <div class="subTitle comesFromLeft">
-        Étudiant ingénieur à l'ISEP<br />
-        Actuellement en recherche d'Alternance
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hippolyte Bach</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesIndex.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="javascript.js" async></script>
+    <meta
+      name="description"
+      content="Site de Hippolyte BACH Ingénieur du numérique et développeur. Portfolio, contact et CV."
+    />
+  </head>
+  <body onbeforeunload="HandleBackFunctionality();">
+    <div></div>
+    <div class="container">
+      <div class="textContainer">
+        <h1 class="title comesFromLeft">Je suis Hippolyte</h1>
+        <div class="subTitle comesFromLeft">
+          Étudiant ingénieur à l'ISEP<br />
+          Actuellement en recherche d'Alternance
+        </div>
+        <div class="buttonsContainer comesFromLeft">
+          <a href="portofolio.html" class="buttonPrimary"
+            >Mes principaux travaux</a
+          >
+          <a href="./contact.html" class="buttonSecondary">Contactez moi</a>
+        </div>
       </div>
-      <div class="buttonsContainer comesFromLeft">
-        <a href="portofolio.html" class="buttonPrimary"
-          >Mes principaux travaux</a
-        >
-        <a href="./contact.html" class="buttonSecondary">Contactez moi</a>
+      <div class="imageContainer">
+        <img
+          src="images/hippolyte.webp"
+          id="profilImage"
+          class="comesFromRight"
+          alt="Photo de profil"
+        />
       </div>
     </div>
-    <div class="imageContainer">
-      <img
-        src="images/hippolyte.webp"
-        id="profilImage"
-        class="comesFromRight"
-        alt="Photo de profil"
-      />
-    </div>
-  </div>
-</body>
+  </body>
+</html>
