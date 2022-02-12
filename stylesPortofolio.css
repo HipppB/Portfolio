@@ -202,6 +202,20 @@ p {
   }
 }
 
+.buttonPrimary {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+  padding-inline: 15px;
+}
+
 @media (max-width: 600px) {
   * {
     animation: none !important;
@@ -209,6 +223,10 @@ p {
   .projectContainer {
     margin-top: 0;
     margin-bottom: -150px;
+  }
+
+  .projectContainerComputer {
+    margin-top: 100px;
   }
   .otherProjectsContainer {
     flex-wrap: nowrap;
@@ -272,7 +290,7 @@ p {
     z-index: 1;
     width: 80vw;
     right: 50vw;
-    transform: translateX(50%) translateY(100px);
+    transform: translateX(50%) translateY(120px);
   }
 
   .computer {

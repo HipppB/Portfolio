@@ -95,11 +95,11 @@ a {
 
   .title {
     font-size: 8vw;
-    padding-left: 10px;
+    padding-left: 50px;
   }
   .subTitle {
     font-size: 6vw;
-    padding-left: 10px;
+    padding-left: 50px;
   }
   .buttonsContainer {
     width: 100vw;
@@ -111,7 +111,7 @@ a {
   }
   .buttonPrimary,
   .buttonSecondary {
-    width: 50%;
+    width: 60%;
     font-size: 5vw;
     text-align: center;
     padding: 10px;
