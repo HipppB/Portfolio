@@ -11,12 +11,6 @@
   width: 100%;
 }
 
-@media (max-width: 950px) {
-  .container {
-    flex-direction: column-reverse !important;
-  }
-}
-
 .textContainer {
   margin-right: 20px;
   padding-bottom: 20px;
@@ -68,4 +62,15 @@ a {
   width: 30px;
   position: absolute;
   left: 20px;
+}
+
+@media (max-width: 975px) {
+  .title,
+  .subTitle,
+  .buttonSecondary {
+    text-align: center;
+  }
+  .buttonsContainer {
+    justify-content: center;
+  }
 }
