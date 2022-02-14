@@ -56,11 +56,15 @@ p {
 }
 .previewPhone {
   width: 250px;
+  /* background-color: red; */
+  height: 350px;
+  object-fit: cover;
+  object-position: right top;
 }
 .shadow {
   position: absolute;
   width: 250px;
-  height: 450px;
+  height: 352px;
   left: 0;
   top: 0;
   background: linear-gradient(
@@ -254,17 +258,20 @@ p {
   .shadow {
     position: absolute;
     width: 250px;
-    height: 450px;
+    height: 370px;
     left: 0;
-    top: 0;
+    top: -15px;
     background: linear-gradient(
       360deg,
       #222222 40%,
-      rgba(34, 34, 34, 0.6) 80%,
+      rgba(34, 34, 34, 0.8) 80%,
       rgba(34, 34, 34, 0) 120%
     );
     mix-blend-mode: normal;
     transition-duration: 0.5s;
+  }
+  .shadow:hover {
+    top: 0;
   }
   .shadowComputer {
     width: 100%;
