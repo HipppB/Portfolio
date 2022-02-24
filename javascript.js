@@ -46,3 +46,15 @@ function cleanStuff() {
 window.onbeforeunload = function HandleBackFunctionality() {
   cleanStuff();
 };
+
+let isMenuShown = false;
+
+function toggleMenu() {
+  isMenuShown = !isMenuShown;
+  const menus = document.querySelectorAll(".header");
+  if (isMenuShown) {
+    menus[0].classList.add("responsive");
+  } else {
+    menus[0].classList.remove("responsive");
+  }
+}
