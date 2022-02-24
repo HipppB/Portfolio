@@ -22,6 +22,8 @@
   line-height: 60px;
   font-style: normal;
   animation-duration: 1s;
+
+  text-align: center;
 }
 
 .buttonsContainer {
