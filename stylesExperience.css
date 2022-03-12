@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5em;
+  font-style: normal;
+  margin-bottom: 0;
+  text-align: center;
+  width: fit-content;
+  align-self: center;
+  border-bottom: 2px solid rgb(169, 169, 169);
+}
+.buttonPrimary {
+  background-color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  width: fit-content;
+  align-self: center;
+}
+
+.timeline-container {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+.timeline-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: rgb(169, 169, 169);
+  z-index: 1;
+}
+.timeline-block {
+  width: calc(50% + 8px);
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+.timeline-block-right {
+  float: right;
+}
+.timeline-block-left {
+  justify-content: flex-end;
+  display: flex;
+  float: left;
+  direction: rtl;
+}
+.timeline-block-left > * {
+  direction: ltr;
+  text-align: right;
+}
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgb(169, 169, 169);
+  background: rgb(207, 207, 207);
+  margin-top: 10px;
+  z-index: 9999;
+}
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666;
+}
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.timeline-content span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #888;
+}
+@media screen and (max-width: 768px) {
+  .timeline-container:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+  h1 {
+    align-self: flex-start;
+    margin-left: 30px;
+
+    width: 50vw;
+    text-align: left;
+  }
+  .timeline-block-left > * {
+    text-align: left;
+  }
+}
