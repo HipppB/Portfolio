@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !index.html
+RewriteCond %{REQUEST_URI} !portfolio.html
+RewriteCond %{REQUEST_URI} !contact.html
+RewriteCond %{REQUEST_URI} !experiences.html
+RewriteRule (.*)$ index.html
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
