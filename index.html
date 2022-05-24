@@ -14,12 +14,41 @@
       content="Site de Hippolyte BACH Ingénieur du numérique et développeur. Portfolio, contact et CV."
     />
   </head>
-  <body>
+  <body class="">
     <a href="./en/" class="noEffect">
       <img
         src="./images/uk.png"
         class="langageSelector"
         style="width: 30px; position: absolute; top: 20px; left: 20px"
+        alt="flag"
+      />
+    </a>
+    <a href="#light" onclick="toggleLight()" class="noEffect" id="sun">
+      <img
+        src="./images/sun.png"
+        class="langageSelector"
+        style="
+          width: 30px;
+          position: absolute;
+          top: 70px;
+          left: 20px;
+          filter: invert(84%) sepia(88%) saturate(5550%) hue-rotate(354deg)
+            brightness(109%) contrast(101%);
+        "
+        alt="flag"
+      />
+    </a>
+    <a
+      href="#dark"
+      onclick="toggleLight()"
+      class="noEffect"
+      id="moon"
+      style="display: none"
+    >
+      <img
+        src="./images/moon.png"
+        class="langageSelector"
+        style="width: 30px; position: absolute; top: 70px; left: 20px"
         alt="flag"
       />
     </a>
@@ -33,7 +62,7 @@
     <nav class="header">
       <ul class="headerUl">
         <li class="headerItem active">
-          <a class="headerLink" href="/">Accueil</a>
+          <a class="headerLink" href="/" rel="keep-params">Accueil</a>
         </li>
         <li class="headerItem">
           <a class="headerLink" href="portfolio.html">Travaux</a>

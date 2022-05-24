@@ -10,6 +10,10 @@ h2 {
   z-index: 2;
   color: white;
 }
+.light h2,
+.light h1 {
+  color: black;
+}
 p {
   color: #858585;
 }
@@ -17,6 +21,10 @@ p {
   display: flex;
   flex-direction: row;
   max-width: 850px;
+  /* background-color: red; */
+  /* align-items: center; */
+  justify-content: "center";
+  margin-top: 50px;
 }
 
 .projectContainerComputer {
@@ -32,19 +40,22 @@ p {
   z-index: 1;
 }
 .projectContainer .textContainer {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   max-width: 400px;
   margin-right: 40px;
+  /* background-color: green; */
 }
 .projectContainer .textContainer.right {
   max-width: 400px;
   margin-right: 0px;
   margin-left: 40px;
+  /* background-color: blue; */
 }
 .phone {
   display: flex;
   position: relative;
-  height: 450px;
+  /* height: 450px; */
+  /* background-color: red; */
 }
 
 .computer {
@@ -64,9 +75,9 @@ p {
 .shadow {
   position: absolute;
   width: 250px;
-  height: 352px;
+  height: 400px;
   left: 0;
-  top: 0;
+  top: -10px;
   background: linear-gradient(
     360deg,
     #222222 20%,
@@ -75,6 +86,14 @@ p {
   );
   mix-blend-mode: normal;
   transition-duration: 0.5s;
+}
+.light .shadow {
+  background: linear-gradient(
+    360deg,
+    white 20%,
+    rgba(255, 255, 255, 0.5) 80%,
+    rgba(255, 255, 255, 0) 120%
+  );
 }
 .shadowComputer {
   top: -10px;
@@ -89,7 +108,7 @@ p {
   );
 }
 .shadow:hover {
-  top: 10px;
+  top: 0px;
   transition-duration: 0.5s;
 }
 .shadowComputer:hover {
@@ -111,6 +130,9 @@ p {
   border-radius: 5px;
   margin-top: 10px;
   margin-right: 10px;
+}
+.light .technology {
+  background-color: #787878;
 }
 
 .technology:hover {
@@ -150,7 +172,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5vw;
+  font-size: 80px;
 }
 
 .previewComputer {
@@ -159,12 +181,14 @@ p {
 }
 .otherProjectPreview,
 .otherProjectPreview img {
-  background-color: #2a2a2a;
   width: 35vw;
   height: 25vw;
   border-radius: 25px;
   max-width: 350px;
   max-height: 250px;
+}
+.otherProjectPreview.empty {
+  background-color: #2a2a2a;
 }
 
 .otherProject .technologies {
@@ -220,13 +244,76 @@ p {
   padding-inline: 15px;
 }
 
+.GithubButtonContainer {
+  margin-top: 15px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.GithubButton {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  width: fit-content;
+  text-decoration: none;
+  padding: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #333333;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition-duration: 0.6s;
+}
+.light .GithubButton {
+  background-color: #787878;
+}
+.GithubButton:hover {
+  background-color: #858585;
+  transform: scale(120%);
+  transition-duration: 0.6s;
+}
+.GithubButton img {
+  filter: invert(100%);
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.otherProjectWithLink img,
+.otherProjectWithLink {
+  transform: scale(100%);
+  transition-duration: 0.5s;
+}
+
+.otherProjectWithLink:hover img,
+.otherProjectWithLink:hover {
+  transform: scale(105%);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
 @media (max-width: 600px) {
   * {
     animation: none !important;
   }
   .projectContainer {
-    margin-top: 0;
-    margin-bottom: -150px;
+    /* margin-top: 100px; */
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 140px;
+    height: fit-content;
+  }
+  .textContainer {
+    /* display: flex; */
+
+    margin-top: 50px;
+  }
+  .projectDescription {
   }
 
   .projectContainerComputer {
@@ -298,55 +385,10 @@ p {
     width: 80vw;
     right: 50vw;
     transform: translateX(50%) translateY(120px);
+    margin-bottom: 120px;
   }
 
   .computer {
     height: auto;
   }
-}
-
-.GithubButtonContainer {
-  margin-top: 15px;
-  align-items: center;
-}
-
-.GithubButton {
-  font-size: 15px;
-  color: white;
-  display: flex;
-  width: fit-content;
-  text-decoration: none;
-  padding: 5px;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #333333;
-  padding: 5px 15px 5px 15px;
-  border-radius: 5px;
-  margin-top: 10px;
-  margin-right: 10px;
-  transition-duration: 0.6s;
-}
-.GithubButton:hover {
-  background-color: #858585;
-  transform: scale(120%);
-  transition-duration: 0.6s;
-}
-.GithubButton img {
-  filter: invert(100%);
-  margin-left: 10px;
-  width: 15px;
-  height: 15px;
-}
-
-.otherProjectWithLink img,
-.otherProjectWithLink {
-  transform: scale(100%);
-  transition-duration: 0.5s;
-}
-
-.otherProjectWithLink:hover img,
-.otherProjectWithLink:hover {
-  transform: scale(105%);
-  cursor: pointer;
-  transition-duration: 0.5s;
 }

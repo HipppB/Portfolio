@@ -22,6 +22,34 @@
         class="langageSelector"
         style="width: 30px; position: absolute; top: 20px; left: 20px"
         alt="flag"
+      /> </a
+    ><a href="#light" onclick="toggleLight()" class="noEffect" id="sun">
+      <img
+        src="./images/sun.png"
+        class="langageSelector"
+        style="
+          width: 30px;
+          position: absolute;
+          top: 70px;
+          left: 20px;
+          filter: invert(84%) sepia(88%) saturate(5550%) hue-rotate(354deg)
+            brightness(109%) contrast(101%);
+        "
+        alt="flag"
+      />
+    </a>
+    <a
+      href="#dark"
+      onclick="toggleLight()"
+      class="noEffect"
+      id="moon"
+      style="display: none"
+    >
+      <img
+        src="./images/moon.png"
+        class="langageSelector"
+        style="width: 30px; position: absolute; top: 70px; left: 20px"
+        alt="flag"
       />
     </a>
     <img
@@ -48,6 +76,151 @@
     </nav>
     <div class="PageContainer">
       <h1>Mes travaux récents</h1>
+      <div class="projectContainer phoneAtRight slideInRight">
+        <div class="textContainer slideInRight">
+          <h2 class="projectTitle">La pharmacie française</h2>
+          <div class="phoneResponsiveContainer">
+            <div class="projectDescription">
+              <p>
+                Conception d'une application de télépharmacie pour La Pharmacie
+                Française
+              </p>
+              <p>
+                Comprenant boutique en ligne, prise de rendez vous et système de
+                visio conférence, gestion des commandes et plusieurs autres
+                fonctionnalités, l'application est destinée à remplacer
+                l'ancienne application de la pharmacie. Mission de 5 mois
+                réalisé en tant que consultant pour JuniorIsep avec un autre
+                intervenant.
+              </p>
+              <p>
+                Princpaux défis ? La mise en place du système de visio
+                conférence et adapter l'application afin de proteger au mieux le
+                consommateur et le pharmacien. Ainsi que la creation d'une UI
+                afin d'avoir la meilleure UX possible.
+              </p>
+              <p><strong>Projet en cours de développement.</strong></p>
+              <div class="technologies">
+                <div class="technology">React Native</div>
+                <div class="technology">React JS</div>
+                <div class="technology">Nest JS</div>
+                <div class="technology">Twilio</div>
+              </div>
+            </div>
+            <div class="GithubButtonContainer"></div>
+          </div>
+        </div>
+        <div class="phone">
+          <img
+            src="./images/iphonePharmaciePreview.webp"
+            class="previewPhone"
+            loading="lazy"
+            alt="ScreenShot of Foodyex App"
+          />
+          <div class="shadow"></div>
+        </div>
+      </div>
+      <!-- <div class="projectContainer phoneAtLeft slideInRight">
+        <div class="textContainer slideInRight">
+          <h2 class="projectTitle">La pharmacie française</h2>
+          <div class="phoneResponsiveContainer">
+            <div class="projectDescription">
+              <p>
+                Conception d'une application de télépharmacie pour La Pharmacie
+                Française
+              </p>
+              <p>
+                Comprenant boutique en ligne, prise de rendez vous et système de
+                visio conférence, gestion des commandes et plusieurs autres
+                fonctionnalités, l'application est destinée à remplacer
+                l'ancienne application de la pharmacie. Mission de 5 mois
+                réalisé en tant que consultant pour JuniorIsep avec un autre
+                intervenant.
+              </p>
+              <p>
+                Princpaux défis ? La mise en place du système de visio
+                conférence et adapter l'application afin de proteger au mieux le
+                consommateur et le pharmacien. Ainsi que la creation d'une UI
+                afin d'avoir la meilleure UX possible.
+              </p>
+              <p><strong>Projet en cours de développement.</strong></p>
+              <div class="technologies">
+                <div class="technology">React Native</div>
+                <div class="technology">React JS</div>
+                <div class="technology">Nest JS</div>
+                <div class="technology">Twilio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone">
+          <img
+            src="./images/iphonePharmaciePreview.webp"
+            class="previewPhone"
+            loading="lazy"
+            alt="ScreenShot of Foodyex App"
+          />
+          <div class="shadow"></div>
+        </div>
+      </div> -->
+      <div class="projectContainer phoneAtLeft slideInLeft">
+        <div class="phone">
+          <img
+            src="./images/iphoneGravityPreview.webp"
+            class="previewPhone"
+            loading="lazy"
+            alt="ScreenShot of Foodyex App"
+          />
+          <div class="shadow"></div>
+        </div>
+
+        <div class="textContainer slideInLeft right">
+          <h2 class="projectTitle">Gravity App</h2>
+          <div class="phoneResponsiveContainer">
+            <div class="projectDescription">
+              <p>
+                Développement d’une application pour la campagne de la liste bde
+                Gravity à l'ISEP
+              </p>
+              <p>
+                Une semaine pour convaincre les 2000 élèves de l'ISEP de voter
+                Gravity : Quoi de mieux qu'une application Ios et Android pour
+                mettre en avant nos évènements, notre projet et nos partenaires
+                ? Inclus un système de messagerie et de notifications
+                Application téléchargée et utilisé par plus de 300 étudiants.
+              </p>
+              <p>
+                Princpaux défis ? Un temps très restreint pour le dévélopement
+                et la mise en place de notifications ciblées.
+              </p>
+              <div class="technologies">
+                <div class="technology">React Native</div>
+                <div class="technology">Nest JS</div>
+                <div class="technology">React JS</div>
+                <div class="technology">Google Api</div>
+                <div class="technology">Docker</div>
+                <div class="technology">vps OVH</div>
+                <div class="technology">API Rest</div>
+              </div>
+            </div>
+            <div class="GithubButtonContainer">
+              <a
+                class="GithubButton noEffect"
+                href="https://github.com/HipppB/Gravity-App-Mobile-App"
+                >GitHub Front Office<img
+                  src="./images/link.png"
+                  alt="link Icon"
+              /></a>
+              <a
+                class="GithubButton noEffect"
+                href="https://github.com/HipppB/Gravity-App-Admin-Panel"
+                >GitHub Back Office
+                <img src="./images/link.png" alt="link Icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="projectContainer phoneAtRight slideInRight">
         <div class="textContainer slideInRight">
           <h2 class="projectTitle">Foodyex</h2>
@@ -179,7 +352,9 @@
           title="Ouvrir dans GitHub"
         >
           <div class="otherProject">
-            <div class="otherProjectPreview otherProjectWithLink">⚔️🏰</div>
+            <div class="otherProjectPreview empty otherProjectWithLink">
+              ⚔️🏰
+            </div>
             <div class="projectTitle">Tower Defense</div>
             <div class="projectDescription">
               Bases d’un jeu de Tower Defense.<br />
@@ -199,7 +374,7 @@
             href="https://private.bach.fr/shorturl"
             title="Ouvrir ShortUrl"
           >
-            <div class="otherProjectPreview otherProjectWithLink"></div>
+            <div class="otherProjectPreview empty otherProjectWithLink"></div>
             <div class="projectTitle">Short url</div>
 
             <div class="projectDescription">
@@ -228,7 +403,7 @@
           title="En savoir plus"
         >
           <div class="otherProject">
-            <div class="otherProjectPreview otherProjectWithLink"></div>
+            <div class="otherProjectPreview empty otherProjectWithLink"></div>
             <div class="projectTitle">Experiences diverses</div>
             <div class="projectDescription">
               Todo, Cloud perso, VPN, boutique en ligne, des serveurs de jeux,

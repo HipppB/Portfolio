@@ -49,6 +49,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+body.light {
+  background-color: white;
+}
 .comesFromLeft {
   animation-name: comesFromLeft;
 }
@@ -113,8 +116,14 @@ a {
   text-decoration: none;
   color: #787878;
 }
+.light .headerLink {
+  color: black;
+}
 .active .headerLink {
   color: #a9a9a9;
+}
+.light .active .headerLink {
+  color: #787878;
 }
 
 .active .headerLink::after {

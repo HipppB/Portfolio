@@ -1,3 +1,11 @@
+if (window.location.hash === "#light") {
+  console.log("HAS LIGHT");
+  setLight();
+} else {
+  console.log("HAS NO LIGHT");
+  setDark();
+}
+console.log();
 const transitionLeft = document.querySelectorAll(".comesFromLeft");
 const transitionRight = document.querySelectorAll(".comesFromRight");
 const liens = document.querySelectorAll("a");
@@ -8,6 +16,8 @@ for (i = 0; i < liens.length; i++) {
   if (!lien.classList.contains("noEffect")) {
     // on écoute le clic sur ces liens
     lien.addEventListener("click", function (event) {
+      console.log("HERE HERE");
+
       //on empêche le lien de nous diriger vers une autre page
       event.preventDefault();
 
@@ -18,7 +28,7 @@ for (i = 0; i < liens.length; i++) {
       for (i = 0; i < transitionRight.length; i++) {
         transitionRight[i].classList.add("leavesToRight");
       }
-      lienclic = event.target.href;
+      lienclic = event.target.href + window.location.hash;
 
       //On attend un peu que l'animation et se joue et on dirige vers le lien
       setTimeout(function () {
@@ -27,6 +37,16 @@ for (i = 0; i < liens.length; i++) {
           cleanStuff();
         }, 500);
       }, 500);
+    });
+  } else {
+    lien.addEventListener("click", function (event) {
+      console.log("HERE");
+      //on empêche le lien de nous diriger vers une autre page
+      // event.preventDefault();
+      // console.log(event.target.hash);
+      // // if (!(lienclic.search(window.location.hash) > -1)) {
+      // // }
+      // window.location.href = lienclic; // + window.location.hash;
     });
   }
 }
@@ -57,4 +77,36 @@ function toggleMenu() {
   } else {
     menus[0].classList.remove("responsive");
   }
+}
+
+function toggleLight() {
+  var element = document.body;
+  element.classList.toggle("light");
+  const moon = document.getElementById("moon");
+  const sun = document.getElementById("sun");
+  if (moon.style.display === "none") {
+    moon.style.display = "block";
+    sun.style.display = "none";
+  } else {
+    moon.style.display = "none";
+    sun.style.display = "block";
+  }
+}
+
+function setLight() {
+  var element = document.body;
+  element.classList.add("light");
+  const moon = document.getElementById("moon");
+  const sun = document.getElementById("sun");
+  moon.style.display = "block";
+  sun.style.display = "none";
+}
+
+function setDark() {
+  var element = document.body;
+  element.classList.remove("light");
+  const moon = document.getElementById("moon");
+  const sun = document.getElementById("sun");
+  moon.style.display = "none";
+  sun.style.display = "block";
 }

@@ -24,12 +24,42 @@
         alt="flag"
       />
     </a>
+    <a href="#light" onclick="toggleLight()" class="noEffect" id="sun">
+      <img
+        src="./images/sun.png"
+        class="langageSelector"
+        style="
+          width: 30px;
+          position: absolute;
+          top: 70px;
+          left: 20px;
+          filter: invert(84%) sepia(88%) saturate(5550%) hue-rotate(354deg)
+            brightness(109%) contrast(101%);
+        "
+        alt="flag"
+      />
+    </a>
+    <a
+      href="#dark"
+      onclick="toggleLight()"
+      class="noEffect"
+      id="moon"
+      style="display: none"
+    >
+      <img
+        src="./images/moon.png"
+        class="langageSelector"
+        style="width: 30px; position: absolute; top: 70px; left: 20px"
+        alt="flag"
+      />
+    </a>
     <img
       src="images/burger2.png"
       id="headerBurger"
       onclick="toggleMenu()"
       alt="Menu"
     />
+
     <nav class="header">
       <ul class="headerUl">
         <li class="headerItem">
@@ -49,7 +79,7 @@
     <div class="container">
       <h1>Experiences professionelles, formations et projets</h1>
       <div class="timeline-container">
-        <div class="timeline-block timeline-block-right">
+        <div class="timeline-block timeline-block-left">
           <div class="marker"></div>
           <div class="timeline-content">
             <h3>Université technique de Prague</h3>
@@ -61,7 +91,7 @@
             </p>
           </div>
         </div>
-        <div class="timeline-block timeline-block-left">
+        <div class="timeline-block timeline-block-right">
           <div class="marker"></div>
           <div class="timeline-content">
             <h3>Étude d'ingénieur</h3>
@@ -73,7 +103,7 @@
             </p>
           </div>
         </div>
-        <div class="timeline-block timeline-block-right">
+        <div class="timeline-block timeline-block-left">
           <div class="marker"></div>
           <div class="timeline-content">
             <h3>La pharmacie française</h3>
@@ -82,6 +112,20 @@
               Développement d'une application de télépharmacie (Boutique et
               téléconférence) IOS et Android en React Native pour l'entreprise
               La Pharmacie Française. <br />Projet actuellement en cours.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Liste BDE Gravity</h3>
+            <span>Pôle tech & Pôle Sponsor</span>
+            <p>
+              Développement d'une application permettant au pôle communication
+              d'atteindre un maximum des 2000 élèves de l'ISEP.
+              <br />Les principales fonctionnalités : Chat, inscriptions aux
+              évènements, carte des restaurants partenaires, liste des sponsors,
+              liste des membres, etc.
             </p>
           </div>
         </div>

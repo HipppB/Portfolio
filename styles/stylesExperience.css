@@ -13,6 +13,9 @@ h1 {
   align-self: center;
   border-bottom: 2px solid rgb(169, 169, 169);
 }
+.light h1 {
+  color: black;
+}
 .buttonPrimary {
   background-color: white;
   border-radius: 12px;
@@ -84,12 +87,16 @@ h1 {
   padding: 0 15px;
   color: #666;
 }
+.light .timeline-content {
+  color: black;
+}
 .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 25px;
   font-weight: 500;
 }
+
 .timeline-content span {
   font-size: 15px;
   color: #a4a4a4;
