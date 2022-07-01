@@ -80,33 +80,45 @@ function toggleMenu() {
 }
 
 function toggleLight() {
-  var element = document.body;
-  element.classList.toggle("light");
-  const moon = document.getElementById("moon");
-  const sun = document.getElementById("sun");
-  if (moon.style.display === "none") {
-    moon.style.display = "block";
-    sun.style.display = "none";
-  } else {
-    moon.style.display = "none";
-    sun.style.display = "block";
+  try {
+    var element = document.body;
+    element.classList.toggle("light");
+    const moon = document.getElementById("moon");
+    const sun = document.getElementById("sun");
+    if (moon.style.display === "none") {
+      moon.style.display = "block";
+      sun.style.display = "none";
+    } else {
+      moon.style.display = "none";
+      sun.style.display = "block";
+    }
+  } catch (e) {
+    console.log(e);
   }
 }
 
 function setLight() {
-  var element = document.body;
-  element.classList.add("light");
-  const moon = document.getElementById("moon");
-  const sun = document.getElementById("sun");
-  moon.style.display = "block";
-  sun.style.display = "none";
+  try {
+    var element = document.body;
+    element.classList.add("light");
+    const moon = document.getElementById("moon");
+    const sun = document.getElementById("sun");
+    moon.style.display = "block";
+    sun.style.display = "none";
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 function setDark() {
-  var element = document.body;
-  element.classList.remove("light");
-  const moon = document.getElementById("moon");
-  const sun = document.getElementById("sun");
-  moon.style.display = "none";
-  sun.style.display = "block";
+  try {
+    var element = document.body;
+    element.classList.remove("light");
+    const moon = document.getElementById("moon");
+    const sun = document.getElementById("sun");
+    moon.style.display = "none";
+    sun.style.display = "block";
+  } catch (e) {
+    console.log(e);
+  }
 }
