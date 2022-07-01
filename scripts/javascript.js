@@ -24,18 +24,17 @@ for (i = 0; i < liens.length; i++) {
       //on ajoute alors la classe "active" pour ajouter le fondu au noir
       for (i = 0; i < transitionLeft.length; i++) {
         transitionLeft[i].classList.add("leavesToLeft");
+        transitionLeft[i].classList.remove("comesFromLeft");
       }
       for (i = 0; i < transitionRight.length; i++) {
         transitionRight[i].classList.add("leavesToRight");
+        transitionRight[i].classList.remove("comesFromRight");
       }
       lienclic = event.target.href + window.location.hash;
 
       //On attend un peu que l'animation et se joue et on dirige vers le lien
       setTimeout(function () {
         window.location.href = lienclic;
-        setTimeout(function () {
-          cleanStuff();
-        }, 500);
       }, 500);
     });
   } else {
@@ -54,12 +53,12 @@ for (i = 0; i < liens.length; i++) {
 function cleanStuff() {
   let transitionLeftBack = document.querySelectorAll(".leavesToLeft");
   let transitionRightBack = document.querySelectorAll(".leavesToRight");
-  for (i = 0; i < transitionLeftBack.length; i++) {
-    transitionLeftBack[i].classList.remove("leavesToLeft");
-  }
-  for (i = 0; i < transitionRightBack.length; i++) {
-    transitionRightBack[i].classList.remove("leavesToRight");
-  }
+  // for (i = 0; i < transitionLeftBack.length; i++) {
+  //   // transitionLeftBack[i].classList.remove("leavesToLeft");
+  // }
+  // for (i = 0; i < transitionRightBack.length; i++) {
+  //   // transitionRightBack[i].classList.remove("leavesToRight");
+  // }
   console.log("cleaned !");
 }
 
