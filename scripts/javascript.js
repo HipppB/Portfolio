@@ -16,8 +16,6 @@ for (i = 0; i < liens.length; i++) {
   if (!lien.classList.contains("noEffect")) {
     // on écoute le clic sur ces liens
     lien.addEventListener("click", function (event) {
-      console.log("HERE HERE");
-
       //on empêche le lien de nous diriger vers une autre page
       event.preventDefault();
 
@@ -31,7 +29,7 @@ for (i = 0; i < liens.length; i++) {
         transitionRight[i].classList.remove("comesFromRight");
       }
       lienclic = event.target.href + window.location.hash;
-
+      console.log(lienclic);
       //On attend un peu que l'animation et se joue et on dirige vers le lien
       setTimeout(function () {
         window.location.href = lienclic;
@@ -39,13 +37,8 @@ for (i = 0; i < liens.length; i++) {
     });
   } else {
     lien.addEventListener("click", function (event) {
-      console.log("HERE");
-      //on empêche le lien de nous diriger vers une autre page
-      // event.preventDefault();
-      // console.log(event.target.hash);
-      // // if (!(lienclic.search(window.location.hash) > -1)) {
-      // // }
-      // window.location.href = lienclic; // + window.location.hash;
+      lienclic = event.target.href + window.location.hash;
+      console.log("JUST HERE", lienclic);
     });
   }
 }

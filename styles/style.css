@@ -144,44 +144,61 @@ a {
     display: none;
     align-self: flex-end;
     align-items: flex-end;
-    right: 70px;
+    top: 70px;
     z-index: 1;
+    width: 100%;
+    left: 0px;
+    z-index: 10;
   }
   .header.responsive {
     display: block;
     padding-top: 0;
     display: flex;
+    width: 100%;
+
     align-items: flex-end;
     flex-direction: column;
     justify-content: right;
     margin-bottom: 20px;
   }
   .header.responsive ul {
+    width: 100%;
+
     padding-top: 0;
     margin-top: 0;
     flex-direction: column;
     display: flex;
-    width: fit-content;
     display: flex;
     align-items: flex-start;
   }
+  .headerItem {
+    width: 100%;
+  }
 
   .header.responsive ul li {
+    width: 100%;
+    flex: 1;
+
     text-align: left;
   }
+  .header.responsive ul a {
+    /* width: 100%; */
+    flex: 1;
+    background-color: #222222;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    border-bottom: #787878 1px solid;
+    font-weight: 600;
+  }
+  body.light > .header.responsive ul a {
+    background-color: white;
+    color: black;
+  }
 
-  .active .headerLink::after {
-    content: "•";
-    position: absolute;
-    left: -10px;
-    top: 0;
-  }
-  .headerLink:hover::after {
-    content: "•";
-    position: absolute;
-    left: -10px;
-    top: 0;
-  }
   #headerBurger {
     display: block;
     width: 50px;
