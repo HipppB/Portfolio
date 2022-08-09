@@ -52,6 +52,7 @@ p {
   /* background-color: blue; */
 }
 .phone {
+  align-items: center;
   display: flex;
   position: relative;
   /* height: 450px; */
@@ -70,20 +71,24 @@ p {
   /* background-color: red; */
   height: 350px;
   object-fit: cover;
+
   object-position: right top;
 }
 .shadow {
   position: absolute;
-  width: 250px;
-  height: 400px;
-  left: 0;
-  top: -10px;
+
+  left: -10px;
+  bottom: 0;
+  top: -50px;
+  right: -10px;
+
   background: linear-gradient(
     360deg,
-    #222222 20%,
-    rgba(34, 34, 34, 0.6) 80%,
+    #222222 30%,
+    rgba(34, 34, 34, 0.6) 90%,
     rgba(34, 34, 34, 0) 120%
   );
+
   mix-blend-mode: normal;
   transition-duration: 0.5s;
 }
@@ -99,16 +104,19 @@ p {
   top: -10px;
   height: 310px;
   max-width: 90vw;
-  width: 850px;
+
   background: linear-gradient(
     360deg,
-    #222222 40%,
+    #222222 30%,
     rgba(34, 34, 34, 0.6) 80%,
     rgba(34, 34, 34, 0) 120%
   );
 }
 .shadow:hover {
+  left: -5px;
+  bottom: 0;
   top: 0px;
+  right: -5px;
   transition-duration: 0.5s;
 }
 .shadowComputer:hover {
@@ -339,30 +347,38 @@ p {
     width: 50vw;
     min-width: 250px;
   }
-  .shadow {
-    width: 100%;
-  }
+
   .shadow {
     position: absolute;
-    width: 250px;
-    height: 370px;
-    left: 0;
-    top: -15px;
-    background: linear-gradient(
-      360deg,
-      #222222 40%,
-      rgba(34, 34, 34, 0.8) 80%,
-      rgba(34, 34, 34, 0) 120%
-    );
+
+    left: -5px;
+    bottom: -5px;
+    /* top: -15px; */
+    right: -5px;
+
     mix-blend-mode: normal;
-    transition-duration: 0.5s;
   }
   .shadow:hover {
-    top: 0;
+    position: absolute;
+
+    left: -5px;
+    bottom: -5px;
+    top: -5px;
+    right: -5px;
+
+    mix-blend-mode: normal;
   }
+
   .shadowComputer {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
     background: linear-gradient(360deg, #222222 80%, rgba(34, 34, 34, 0) 120%);
+  }
+  .shadowComputer:hover {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
   .phone {
