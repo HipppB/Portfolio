@@ -42,22 +42,21 @@ for (i = 0; i < liens.length; i++) {
     });
   }
 }
+window.addEventListener("pageshow", (event) => {
+  cleanStuff();
+});
 
 function cleanStuff() {
   let transitionLeftBack = document.querySelectorAll(".leavesToLeft");
   let transitionRightBack = document.querySelectorAll(".leavesToRight");
-  // for (i = 0; i < transitionLeftBack.length; i++) {
-  //   // transitionLeftBack[i].classList.remove("leavesToLeft");
-  // }
-  // for (i = 0; i < transitionRightBack.length; i++) {
-  //   // transitionRightBack[i].classList.remove("leavesToRight");
-  // }
+  for (i = 0; i < transitionLeftBack.length; i++) {
+    transitionLeftBack[i].classList.remove("leavesToLeft");
+  }
+  for (i = 0; i < transitionRightBack.length; i++) {
+    transitionRightBack[i].classList.remove("leavesToRight");
+  }
   console.log("cleaned !");
 }
-
-window.onbeforeunload = function HandleBackFunctionality() {
-  cleanStuff();
-};
 
 let isMenuShown = false;
 

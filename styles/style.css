@@ -138,7 +138,32 @@ a {
 }
 /* Responsive header */
 
+.langageSelector {
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.themeSelector {
+  width: 30px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  filter: invert(84%) sepia(88%) saturate(5550%) hue-rotate(354deg)
+    brightness(109%) contrast(101%);
+}
+
+#moon img {
+  filter: none;
+}
+
 @media (max-width: 435px) {
+  .themeSelector {
+    top: 20px;
+    left: 70px;
+  }
+
   .header {
     position: absolute;
     display: none;
