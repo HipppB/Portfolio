@@ -115,7 +115,6 @@ h1 {
   color: #888;
 }
 
-
 @media screen and (max-width: 768px) {
   .timeline-container:before {
     left: 8px;
